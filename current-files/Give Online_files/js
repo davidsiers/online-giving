@@ -1,0 +1,55 @@
+var ClickToCall=function() {
+ClickToCall.initializeBase(this);
+this._timeout = 0;
+this._userContext = null;
+this._succeeded = null;
+this._failed = null;
+}
+ClickToCall.prototype={
+_get_path:function() {
+ var p = this.get_path();
+ if (p) return p;
+ else return ClickToCall._staticInstance.get_path();},
+MakeCall:function(pbxSystemID,channel,phoneNumber,callerId,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'MakeCall',false,{pbxSystemID:pbxSystemID,channel:channel,phoneNumber:phoneNumber,callerId:callerId},succeededCallback,failedCallback,userContext); },
+MakeCallFollowMe:function(personID,pbxSystemID,channel,phoneNumber,callerId,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'MakeCallFollowMe',false,{personID:personID,pbxSystemID:pbxSystemID,channel:channel,phoneNumber:phoneNumber,callerId:callerId},succeededCallback,failedCallback,userContext); },
+MakeCallSimple:function(personId,phoneNumber,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'MakeCallSimple',false,{personId:personId,phoneNumber:phoneNumber},succeededCallback,failedCallback,userContext); },
+MarkVoicemailRead:function(voiceMailID,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'MarkVoicemailRead',false,{voiceMailID:voiceMailID},succeededCallback,failedCallback,userContext); },
+DeleteVoicemail:function(voiceMailID,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'DeleteVoicemail',false,{voiceMailID:voiceMailID},succeededCallback,failedCallback,userContext); },
+VoicemailExists:function(voiceMailID,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'VoicemailExists',false,{voiceMailID:voiceMailID},succeededCallback,failedCallback,userContext); },
+GetVoicemails:function(personID,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetVoicemails',false,{personID:personID},succeededCallback,failedCallback,userContext); }}
+ClickToCall.registerClass('ClickToCall',Sys.Net.WebServiceProxy);
+ClickToCall._staticInstance = new ClickToCall();
+ClickToCall.set_path = function(value) { ClickToCall._staticInstance.set_path(value); }
+ClickToCall.get_path = function() { return ClickToCall._staticInstance.get_path(); }
+ClickToCall.set_timeout = function(value) { ClickToCall._staticInstance.set_timeout(value); }
+ClickToCall.get_timeout = function() { return ClickToCall._staticInstance.get_timeout(); }
+ClickToCall.set_defaultUserContext = function(value) { ClickToCall._staticInstance.set_defaultUserContext(value); }
+ClickToCall.get_defaultUserContext = function() { return ClickToCall._staticInstance.get_defaultUserContext(); }
+ClickToCall.set_defaultSucceededCallback = function(value) { ClickToCall._staticInstance.set_defaultSucceededCallback(value); }
+ClickToCall.get_defaultSucceededCallback = function() { return ClickToCall._staticInstance.get_defaultSucceededCallback(); }
+ClickToCall.set_defaultFailedCallback = function(value) { ClickToCall._staticInstance.set_defaultFailedCallback(value); }
+ClickToCall.get_defaultFailedCallback = function() { return ClickToCall._staticInstance.get_defaultFailedCallback(); }
+ClickToCall.set_enableJsonp = function(value) { ClickToCall._staticInstance.set_enableJsonp(value); }
+ClickToCall.get_enableJsonp = function() { return ClickToCall._staticInstance.get_enableJsonp(); }
+ClickToCall.set_jsonpCallbackParameter = function(value) { ClickToCall._staticInstance.set_jsonpCallbackParameter(value); }
+ClickToCall.get_jsonpCallbackParameter = function() { return ClickToCall._staticInstance.get_jsonpCallbackParameter(); }
+ClickToCall.set_path("/WebServices/ClickToCall.asmx");
+ClickToCall.MakeCall= function(pbxSystemID,channel,phoneNumber,callerId,onSuccess,onFailed,userContext) {ClickToCall._staticInstance.MakeCall(pbxSystemID,channel,phoneNumber,callerId,onSuccess,onFailed,userContext); }
+ClickToCall.MakeCallFollowMe= function(personID,pbxSystemID,channel,phoneNumber,callerId,onSuccess,onFailed,userContext) {ClickToCall._staticInstance.MakeCallFollowMe(personID,pbxSystemID,channel,phoneNumber,callerId,onSuccess,onFailed,userContext); }
+ClickToCall.MakeCallSimple= function(personId,phoneNumber,onSuccess,onFailed,userContext) {ClickToCall._staticInstance.MakeCallSimple(personId,phoneNumber,onSuccess,onFailed,userContext); }
+ClickToCall.MarkVoicemailRead= function(voiceMailID,onSuccess,onFailed,userContext) {ClickToCall._staticInstance.MarkVoicemailRead(voiceMailID,onSuccess,onFailed,userContext); }
+ClickToCall.DeleteVoicemail= function(voiceMailID,onSuccess,onFailed,userContext) {ClickToCall._staticInstance.DeleteVoicemail(voiceMailID,onSuccess,onFailed,userContext); }
+ClickToCall.VoicemailExists= function(voiceMailID,onSuccess,onFailed,userContext) {ClickToCall._staticInstance.VoicemailExists(voiceMailID,onSuccess,onFailed,userContext); }
+ClickToCall.GetVoicemails= function(personID,onSuccess,onFailed,userContext) {ClickToCall._staticInstance.GetVoicemails(personID,onSuccess,onFailed,userContext); }
+var gtc = Sys.Net.WebServiceProxy._generateTypedConstructor;
+if (typeof(Voicemail) === 'undefined') {
+var Voicemail=gtc("Voicemail");
+Voicemail.registerClass('Voicemail');
+}
