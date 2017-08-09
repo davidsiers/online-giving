@@ -106,21 +106,36 @@ body.forgot-username {background-color: #282828;}
 
 /* Extra small devices (portrait phones, less than 576px)*/
 /*  No media query since this is the default in Bootstrap*/
-@media (max-height: 2000px) { .login-form {margin-top: 40vh;} }
+@media (max-height: 2000px) {
+  .login-form {margin-top: 40vh;}
+  .forgot-password-form, .forgot-username-form {margin-top: 35vh;} }
 
-@media (max-height: 1700px) { .login-form {margin-top: 40vh;} }
+@media (max-height: 1700px) {  }
 
-@media (max-height: 1600px) { .login-form {margin-top: 30vh;} }
+@media (max-height: 1600px) { .login-form {margin-top: 30vh;}
+  .forgot-password-form, .forgot-username-form {margin-top: 25vh;} }
 
-@media (max-height: 1200px) { .login-form {margin-top: 30vh;} }
+@media (max-height: 1200px) { }
 
-@media (max-height: 900px) { .login-form {margin-top: 25vh;} }
+@media (max-height: 900px) {
+  .login-form {margin-top: 25vh;}
+  .forgot-password-form, .forgot-username-form {margin-top: 20vh;}
+}
 
-@media (max-height: 670px) { .login-form {margin-top: 20vh;} }
+@media (max-height: 670px) {
+  .login-form {margin-top: 20vh;}
+  .forgot-password-form, .forgot-username-form {margin-top: 10vh;}
+}
 
-@media (max-height: 570px) { .login-form {margin-top: 15vh;} }
+@media (max-height: 570px) {
+  .login-form {margin-top: 15vh;}
+  .forgot-password-form, .forgot-username-form {margin-top: 6vh;}
+}
 
-@media (max-height: 475px) { .login-form {margin-top: 10vh;} }
+@media (max-height: 475px) {
+  .login-form {margin-top: 10vh;}
+  .forgot-password-form, .forgot-username-form {margin-top: 5vh;}
+}
 
 @media (max-width: 1199px) {
   img.logo.nav {max-width: 40px;}
