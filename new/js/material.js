@@ -169,7 +169,7 @@
             $input.after("<label " + forAttribute + "class='control-label'>" + placeholder + "</label>");
           }
 
-          // Set as empty if is empty (damn I must improve this...)
+          // Set as empty if is empty
           if ($input.val() === null || $input.val() == "undefined" || $input.val() === "") {
             $formGroup.addClass("is-empty");
           }
