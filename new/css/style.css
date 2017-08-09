@@ -65,12 +65,16 @@ span.create-account a {color: #5e5e5e;font-weight: 500;font-size: 1.1rem;letter-
 /* ===================== Account Registration Page ===========================*/
 body.account-registration {background-color: #282828;}
 
-.registration-form {margin-top: 15vh;}
+.registration-form {margin-top: 8rem;}
+
+.registration-form h1 {text-align: center;text-transform: uppercase;color: #727272;font-weight: 400;font-size: 3rem;letter-spacing: .3rem;margin-bottom: 8rem;}
+
+.list .form-control {color: #BDBDBD;}
 
 #personal-contact {margin-bottom: 8rem;}
 #address {margin-bottom: 8rem;}
 #personal-status {margin-bottom: 8rem;}
-
+#password {margin-bottom: 8rem;}
 
 /* =============================================================================
 =============================== Media Queries ==================================
