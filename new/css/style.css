@@ -1,3 +1,5 @@
+/* ============================== Login Page =================================*/
+
 body.login {background-color: #282828;}
 
 img.logo.login {max-width: 100px;margin-bottom: 4rem;}
@@ -59,6 +61,16 @@ span.forgot-password a {color: #5e5e5e;font-weight: 500;font-size: 1.1rem;letter
 div.bottom {bottom: 0;position: fixed;right: 0;left: 0;z-index: 1030;margin: 2rem 0;}
 span.create-account {text-align: center;display: block;}
 span.create-account a {color: #5e5e5e;font-weight: 500;font-size: 1.1rem;letter-spacing: .1rem;}
+
+/* ===================== Account Registration Page ===========================*/
+body.account-registration {background-color: #282828;}
+
+.registration-form {margin-top: 15vh;}
+
+#personal-contact {margin-bottom: 8rem;}
+#address {margin-bottom: 8rem;}
+#personal-status {margin-bottom: 8rem;}
+
 
 /* =============================================================================
 =============================== Media Queries ==================================

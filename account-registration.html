@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Online Giving</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Material Design fonts -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Material Design -->
+    <link href="new/css/bootstrap-material-design.css" rel="stylesheet">
+    <link href="new/css/ripples.min.css" rel="stylesheet">
+
+    <!-- Dropdown.js -->
+    <link href="http://cdn.rawgit.com/FezVrasta/dropdown.js/master/jquery.dropdown.css" rel="stylesheet">
+
+    <!-- Custom LBC styles -->
+    <link href="new/css/style.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  </head>
+
+  <body class="account-registration">
+
+    <div class="container">
+      <div class="col-sm-8 col-sm-offset-2 registration-form">
+
+      <form class="form-signin">
+        <h1>Account Registration</h1>
+        <section id="personal-contact"> <!-- #personal-contact -->
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group label-floating is-empty">
+              <label class="control-label">First Name</label>
+              <input type="text" class="form-control" required>
+              <span class="help-block"></span>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group label-floating is-empty">
+              <label class="control-label">Last Name</label>
+              <input type="text" class="form-control" required>
+              <span class="help-block"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group label-floating is-empty">
+              <label class="control-label">Email</label>
+              <input type="email" class="form-control" required>
+              <span class="help-block"></span>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group label-floating is-empty">
+              <label class="control-label">Phone</label>
+              <input type="tel" class="form-control" required>
+              <span class="help-block"></span>
+            </div>
+          </div>
+        </div>
+      </section> <!-- /#personal-contact -->
+
+
+      <section id="address"> <!-- #address -->
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="form-group label-floating is-empty">
+            <label class="control-label">Street Address</label>
+            <input type="text" class="form-control" required>
+            <span class="help-block"></span>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group label-floating is-empty">
+            <label class="control-label">City</label>
+            <input type="text" class="form-control" required>
+            <span class="help-block"></span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="form-group label-floating is-empty">
+            <label class="control-label">State</label>
+            <input type="text" class="form-control" required>
+            <span class="help-block"></span>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="form-group label-floating is-empty">
+            <label class="control-label">Zip Code</label>
+            <input type="text" class="form-control" required>
+            <span class="help-block"></span>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group label-floating is-empty">
+            <label class="control-label">Country</label>
+            <input type="text" class="form-control" required>
+            <span class="help-block"></span>
+          </div>
+        </div>
+      </div>
+    </section> <!-- /address -->
+
+
+    <section id="personal-status"> <!-- personal status -->
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group label-floating is-empty">
+          <label class="control-label">Username</label>
+          <input type="username" class="form-control" required>
+          <span class="help-block"></span>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group label-floating is-empty">
+          <label class="control-label">Birth Date <em>MM-DD-YYYY</em></label>
+          <input type="text" class="form-control" required>
+          <span class="help-block"></span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group label-floating is-empty">
+          <label class="control-label">Username</label>
+          <input type="username" class="form-control" required>
+          <span class="help-block"></span>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group label-floating is-empty">
+          <label class="control-label">Username</label>
+          <input type="username" class="form-control" required>
+          <span class="help-block"></span>
+        </div>
+      </div>
+    </div>
+  </section> <!-- /personal status -->
+        <button class="btn btn-default btn-lg btn-block login" type="submit">Login</button>
+        <span class="forgot-password"><a href="#">Forgot your password?</a></span>
+      </form>
+
+        <div class="bottom">
+          <span class="create-account"><a href="#">Don't have an account? Create One</a></span>
+        </div>
+
+
+    </div> <!-- /container -->
+
+    <!-- Twitter Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- Material Design for Bootstrap -->
+    <script src="new/js/material.js"></script>
+    <script src="new/js/ripples.min.js"></script>
+    <script>
+      $.material.init();
+    </script>
+
+    <!-- Dropdown.js -->
+    <script src="https://cdn.rawgit.com/FezVrasta/dropdown.js/master/jquery.dropdown.js"></script>
+    <script>
+      $("#dropdown-menu select").dropdown();
+    </script>
+  </body>
+
+</html>
