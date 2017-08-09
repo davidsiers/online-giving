@@ -67,7 +67,6 @@ span.create-account a {color: #5e5e5e;font-weight: 500;font-size: 1.1rem;letter-
 body.account-registration {background-color: #282828;}
 
 .navbar, .navbar.navbar-default {background-color: #282828;color: rgba(255,255,255, 0.84);}
-.navbar-brand {padding: 8px 15px;}
 img.logo.nav {max-width: 50px;margin-left: .5rem;}
 ul.nav li a {letter-spacing: 1px;text-transform: uppercase;}
 
@@ -86,19 +85,6 @@ ul.nav li a {letter-spacing: 1px;text-transform: uppercase;}
 
 body.forgot-password {background-color: #282828;}
 
-.forgot-password-form {margin-top:8rem;margin-bottom:8rem;}
-.forgot-password-form h1 {text-align: center;text-transform: uppercase;color: #727272;font-weight: 400;font-size: 3rem;letter-spacing: .3rem;margin-bottom: 8rem;}
-
-span.forgot-user {text-align: center;display: block;}
-span.forgot-user a {color: #5e5e5e;font-weight: 500;font-size: 1.1rem;letter-spacing: .1rem;}
-
-
-/* ========================= Forgot Username Page ============================*/
-
-body.forgot-username {background-color: #282828;}
-
-.forgot-username-form {margin-top:8rem;margin-bottom:8rem;}
-.forgot-username-form h1 {text-align: center;text-transform: uppercase;color: #727272;font-weight: 400;font-size: 3rem;letter-spacing: .3rem;margin-bottom: 8rem;}
 
 /* =============================================================================
 =============================== Media Queries ==================================
@@ -122,10 +108,5 @@ body.forgot-username {background-color: #282828;}
 
 @media (max-height: 475px) { .login-form {margin-top: 10vh;} }
 
-@media (max-width: 1199px) {
-  img.logo.nav {max-width: 40px;}
-}
 
-@media (max-width: 767px) {
-  img.logo.nav {max-width: 39px; }
-}
+@media (max-width: 767px) { img.logo.nav {max-width: 39px;} }

@@ -2313,7 +2313,7 @@ legend {
     margin-top: 15px;
     margin-bottom: 15px;
   }
-  .navbar .navbar-nav .dropdown .dropdown-toggle .caret {
+/*  .navbar .navbar-nav .dropdown .dropdown-toggle .caret {
     display: none;
   }
   .navbar .navbar-nav .dropdown .dropdown-toggle:after {
@@ -2321,13 +2321,13 @@ legend {
     font-family: 'Material Icons';
     font-size: 1.5em;
     float: right;
-  }
+  }*/
   .navbar .navbar-nav .dropdown .dropdown-menu {
     margin-left: 20px;
   }
-  .navbar .navbar-nav .dropdown.open .dropdown-toggle:after {
+/*  .navbar .navbar-nav .dropdown.open .dropdown-toggle:after {
     content: 'keyboard_arrow_down';
-  }
+  }*/
   .navbar .navbar-nav .dropdown.open .dropdown-menu > .dropdown-header {
     border: 0;
     color: inherit;

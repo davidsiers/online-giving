@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Login | Online Giving</title>
+    <title>Forgot Username | Online Giving</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -30,30 +30,39 @@
     <script src="../assets/js/jquery-1.10.2.min.js"></script>
   </head>
 
-  <body class="login">
+  <body class="forgot-username">
+    <div class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="login.html">
+            <img class="img-responsive center-block logo nav" src="../assets/img/lbc-logo-nav-bar.svg">
+          </a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="login.html">login</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <div class="container">
-      <div class="col-sm-4 col-sm-offset-4 login-form">
+      <div class="col-sm-4 col-sm-offset-4 forgot-username-form">
 
-      <form class="form-signin">
-        <img class="img-responsive center-block logo login" src="../assets/img/lbc-logo-login.svg">
+      <form class="form-forgot-username">
+        <h1>Forgot Username</h1>
         <div class="form-group label-floating is-empty">
-          <label class="control-label">Username</label>
-          <input type="username" class="form-control" required>
+          <label class="control-label">Email</label>
+          <input type="email" class="form-control" required>
           <span class="help-block"></span>
         </div>
-        <div class="form-group label-floating is-empty">
-          <label class="control-label">Password</label>
-          <input type="password" class="form-control" required>
-          <span class="help-block"></span>
-        </div>
-        <a class="btn btn-default btn-lg btn-block login" href="give.html" type="submit">Login</a>
-        <span class="forgot-password"><a href="forgot-password.html">Forgot your password?</a></span>
+        <button class="btn btn-default btn-lg btn-block login" type="submit">Submit</button>
       </form>
-
-        <div class="bottom">
-          <span class="create-account"><a href="account-registration.html">Don't have an account? Create One</a></span>
-        </div>
 
 
     </div> <!-- /container -->
