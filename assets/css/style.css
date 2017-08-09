@@ -63,9 +63,14 @@ span.create-account {text-align: center;display: block;}
 span.create-account a {color: #5e5e5e;font-weight: 500;font-size: 1.1rem;letter-spacing: .1rem;}
 
 /* ===================== Account Registration Page ===========================*/
+
 body.account-registration {background-color: #282828;}
 
-.registration-form {margin-top: 8rem;}
+.navbar, .navbar.navbar-default {background-color: #282828;color: rgba(255,255,255, 0.84);}
+img.logo.nav {max-width: 50px;margin-left: .5rem;}
+ul.nav li a {letter-spacing: 1px;text-transform: uppercase;}
+
+.registration-form {margin-top:8rem;margin-bottom:8rem;}
 
 .registration-form h1 {text-align: center;text-transform: uppercase;color: #727272;font-weight: 400;font-size: 3rem;letter-spacing: .3rem;margin-bottom: 8rem;}
 
@@ -75,6 +80,10 @@ body.account-registration {background-color: #282828;}
 #address {margin-bottom: 8rem;}
 #personal-status {margin-bottom: 8rem;}
 #password {margin-bottom: 8rem;}
+
+/* ========================= Forgot Password Page ============================*/
+
+
 
 /* =============================================================================
 =============================== Media Queries ==================================
@@ -97,3 +106,6 @@ body.account-registration {background-color: #282828;}
 @media (max-height: 570px) { .login-form {margin-top: 15vh;} }
 
 @media (max-height: 475px) { .login-form {margin-top: 10vh;} }
+
+
+@media (max-width: 767px) { img.logo.nav {max-width: 39px;} }
