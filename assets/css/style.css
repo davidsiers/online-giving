@@ -128,23 +128,25 @@ body.forgot-username {background-color: #282828;}
 
 .give #calendar {margin:8rem 0;}
 
+.give .fc-unthemed td.fc-today {background: #dfdfdf;}
+
 /* kill the scrollbars and allow natural height */
-.fc-scroller,
-.fc-day-grid-container,    /* these divs might be assigned height, which we need to cleared */
-.fc-time-grid-container {overflow: visible !important;height: auto !important;}
+.give .fc-scroller,
+.give .fc-day-grid-container,    /* these divs might be assigned height, which we need to cleared */
+.give .fc-time-grid-container {overflow: visible !important;height: auto !important;}
 
-.fc-button.fc-state-default {box-shadow: none;border: 0;background: #fff;text-shadow: none;}
-.fc-button.fc-state-default.fc-state-active {box-shadow: none;border: 0;background: rgba(165, 165, 165, 0.2);text-shadow: none;color: #272727;}
-.fc-button.fc-state-default:hover {background: rgba(255, 255, 255, 0.5);}
+.give .fc-button.fc-state-default {box-shadow: none;border: 0;background: #fff;text-shadow: none;}
+.give .fc-button.fc-state-default.fc-state-active {box-shadow: none;border: 0;background: rgba(165, 165, 165, 0.2);text-shadow: none;color: #272727;}
+.give .fc-button.fc-state-default:hover {background: rgba(255, 255, 255, 0.5);}
 
-.fc-state-default.fc-corner-left {border-top-left-radius: 0;border-bottom-left-radius: 0;}
-.fc-state-default.fc-corner-left {border-top-left-radius: 0;border-bottom-left-radius: 0;}
-.fc-state-default.fc-corner-right {border-top-right-radius: 0;border-bottom-right-radius: 0;}
+.give .fc-state-default.fc-corner-left {border-top-left-radius: 0;border-bottom-left-radius: 0;}
+.give .fc-state-default.fc-corner-left {border-top-left-radius: 0;border-bottom-left-radius: 0;}
+.give .fc-state-default.fc-corner-right {border-top-right-radius: 0;border-bottom-right-radius: 0;}
 
-.fc-event, .fc-event-dot {background-color: #34b33f;}
-.fc-event {border-radius:0;border: 1px solid #34b33f;}
+.give .fc-event, .fc-event-dot {background-color: #34b33f;}
+.give .fc-event {border-radius:0;border: 1px solid #34b33f;}
 
-.fc-state-hover {color: #333333;text-decoration: none;background-position: 0 -15px;-webkit-transition: background-position 0.1s linear;-moz-transition: background-position 0.1s linear;-o-transition: background-position 0.1s linear;transition: background-position 0.1s linear;}
+.give .fc-state-hover {color: #333333;text-decoration: none;background-position: 0 -15px;-webkit-transition: background-position 0.1s linear;-moz-transition: background-position 0.1s linear;-o-transition: background-position 0.1s linear;transition: background-position 0.1s linear;}
 
 /* =============================================================================
 =============================== Media Queries ==================================
