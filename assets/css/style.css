@@ -70,6 +70,12 @@ body.account-registration {background-color: #282828;}
 .navbar-brand {padding: 8px 15px;}
 img.logo.nav {max-width: 50px;margin-left: .5rem;}
 ul.nav li a {letter-spacing: 1px;text-transform: uppercase;}
+.navbar .dropdown-menu li > a:hover,
+.navbar.navbar-default .dropdown-menu li > a:hover,
+.navbar .dropdown-menu li > a:focus,
+.navbar.navbar-default .dropdown-menu li > a:focus,
+.navbar .dropdown-menu .active > a,
+.navbar.navbar-default .dropdown-menu .active > a {color: #e2e2e2;background-color: #3e3e3e;}
 
 .registration-form {margin-top:8rem;margin-bottom:8rem;}
 
@@ -101,11 +107,44 @@ body.forgot-username {background-color: #282828;}
 .forgot-username-form h1 {text-align: center;text-transform: uppercase;color: #727272;font-weight: 400;font-size: 3rem;letter-spacing: .3rem;margin-bottom: 8rem;}
 
 
-/* ========================= Forgot Username Page ============================*/
+/* ============================== Giving Page ================================*/
 
-.panel-body#onetime {padding: 15px;font-size: 3rem;color: #fff;font-weight: 100;letter-spacing: .15rem;background-color: #2ea0d6;}
-.panel-body#repeating-payments {padding: 15px;font-size: 3rem;color: #fff;font-weight: 100;letter-spacing: .15rem;background-color: #37c2b8;}
-.panel-body#my-statements {padding: 15px;font-size: 3rem;color: #fff;font-weight: 100;letter-spacing: .15rem;background-color: #66cae5;}
+.panel .side-image {padding:0;}
+.panel .side-image img {min-height: 25rem;}
+.panel .panel-body {padding: 0px;}
+.panel .panel-body span {padding: 15px;}
+.panel .panel-body a {margin-right: 0;text-transform: none;bottom: -4rem;float: right;;border-bottom-left-radius: 25px;border-top-left-radius: 25px;padding: 1rem 5rem;color: #fff;background-color: rgba(255, 255, 255, 0.2);}
+.panel .panel-body span, .panel .panel-body a {display: block}
+.panel#onetime {padding:0;font-size: 3rem;color: #fff;font-weight: 100;letter-spacing: .15rem;background-color: #2ea0d6;height: 26rem;overflow: hidden;}
+.panel#repeating-payments {padding: 0;font-size: 3rem;color: #fff;font-weight: 100;letter-spacing: .15rem;background-color: #37c2b8;height: 26rem;overflow: hidden;}
+.panel#my-statements {padding: 0;font-size: 3rem;color: #fff;font-weight: 100;letter-spacing: .15rem;background-color: #66cae5;height: 26rem;overflow: hidden;}
+.panel#onetime .panel-body a {bottom: -8.4rem;}
+.panel#repeating-payments .panel-body a {bottom: -4rem;}
+.panel#my-statements .panel-body a {bottom: -8rem;}
+
+/* =========================== My Giving Page ================================*/
+
+.give #loading {display: none;margin-top: 2rem;}
+
+.give #calendar {margin:8rem 0;}
+
+/* kill the scrollbars and allow natural height */
+.fc-scroller,
+.fc-day-grid-container,    /* these divs might be assigned height, which we need to cleared */
+.fc-time-grid-container {overflow: visible !important;height: auto !important;}
+
+.fc-button.fc-state-default {box-shadow: none;border: 0;background: #fff;text-shadow: none;}
+.fc-button.fc-state-default.fc-state-active {box-shadow: none;border: 0;background: rgba(165, 165, 165, 0.2);text-shadow: none;color: #272727;}
+.fc-button.fc-state-default:hover {background: rgba(255, 255, 255, 0.5);}
+
+.fc-state-default.fc-corner-left {border-top-left-radius: 0;border-bottom-left-radius: 0;}
+.fc-state-default.fc-corner-left {border-top-left-radius: 0;border-bottom-left-radius: 0;}
+.fc-state-default.fc-corner-right {border-top-right-radius: 0;border-bottom-right-radius: 0;}
+
+.fc-event, .fc-event-dot {background-color: #34b33f;}
+.fc-event {border-radius:0;border: 1px solid #34b33f;}
+
+.fc-state-hover {color: #333333;text-decoration: none;background-position: 0 -15px;-webkit-transition: background-position 0.1s linear;-moz-transition: background-position 0.1s linear;-o-transition: background-position 0.1s linear;transition: background-position 0.1s linear;}
 
 /* =============================================================================
 =============================== Media Queries ==================================
@@ -146,8 +185,18 @@ body.forgot-username {background-color: #282828;}
 
 @media (max-width: 1199px) {
   img.logo.nav {max-width: 40px;}
+  .panel .panel-body a {padding: 1rem 3rem;}
 }
 
 @media (max-width: 767px) {
   img.logo.nav {max-width: 39px; }
+}
+
+@media (max-width: 510px) {
+  .fc-toolbar.fc-header-toolbar .fc-center h2 {margin-top:7rem;}
+  .give #calendar {margin: 2rem 0;}
+}
+
+@media (max-width: 400px) {
+  .give .col-md-4 {padding-left:0;padding-right:0;}
 }

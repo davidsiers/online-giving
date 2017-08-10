@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="../assets/fonts/roboto.css" type="text/css">
     <link href="../assets/fonts/material-icons.css" rel="stylesheet">
 
+    <!-- Calendar CSS -->
+    <link href='../assets/css/calendar/fullcalendar.css' rel='stylesheet' />
+    <link href='../assets/css/calendar/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+
     <!-- Bootstrap -->
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
 
@@ -28,6 +32,48 @@
 
     <!-- jQuery -->
     <script src="../assets/js/jquery-1.10.2.min.js"></script>
+
+    <!-- Calendar JS -->
+    <script src='../assets/js/calendar/moment.min.js'></script>
+    <script src='../assets/js/calendar/fullcalendar.min.js'></script>
+    <script src='../assets/js/calendar/gcal.min.js'></script>
+    <script>
+
+    	$(document).ready(function() {
+
+    		$('#calendar').fullCalendar({
+
+    			header: {
+    				left: 'prev,next today',
+    				center: 'title',
+    				right: 'month,listMonth'
+    			},
+
+    			displayEventTime: false, // don't show the time column in list view
+
+    			// THIS KEY WON'T WORK IN PRODUCTION!!!
+    			// To make your own Google API key, follow the directions here:
+    			// http://fullcalendar.io/docs/google_calendar/
+    			googleCalendarApiKey: 'AIzaSyDcnW6WejpTOCffshGDDb4neIrXVUA1EAE',
+
+    			// Lancaster Baptist Church Events
+    			events: 'ujl2lkhcmvkjecom0a6btgopek@group.calendar.google.com',
+
+    			eventClick: function(event) {
+    				// opens events in a popup window
+    				window.open(event.url, 'gcalevent', 'width=1000,height=600');
+    				return false;
+    			},
+
+    			loading: function(bool) {
+    				$('#loading').toggle(bool);
+    			}
+
+    		});
+
+    	});
+
+    </script>
   </head>
 
   <body class="give">
@@ -53,7 +99,7 @@
                 <b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li><a href="my-giving.html">My Giving</a></li>
-                  <li><a href="my-contributions.html">My Contributions</a></li>
+                  <li><a href="my-contributions.html">My Statements</a></li>
                   <li><a href="my-payment-methods.html">My Payment Methods</a></li>
                   <li class="divider"></li>
                   <li><a href="login.html">Log Out</a></li>
@@ -65,19 +111,10 @@
     </div>
 
     <div class="container">
-      <div class="col-sm-4 col-sm-offset-4 forgot-username-form">
-
-      <form class="form-forgot-username">
-        <h1>Calendar</h1>
-        <div class="form-group label-floating is-empty">
-          <label class="control-label">Email</label>
-          <input type="email" class="form-control" required>
-          <span class="help-block"></span>
-        </div>
-        <button class="btn btn-default btn-lg btn-block login" type="submit">Submit</button>
-      </form>
-
-
+      <div class="col-md-12 text-center">
+        <div id='loading'>loading...</div>
+        <div id='calendar'></div>
+      </div>
     </div> <!-- /container -->
 
     <!-- Twitter Bootstrap -->
