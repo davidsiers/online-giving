@@ -100,6 +100,13 @@ body.forgot-username {background-color: #282828;}
 .forgot-username-form {margin-top:8rem;margin-bottom:8rem;}
 .forgot-username-form h1 {text-align: center;text-transform: uppercase;color: #727272;font-weight: 400;font-size: 3rem;letter-spacing: .3rem;margin-bottom: 8rem;}
 
+
+/* ========================= Forgot Username Page ============================*/
+
+.panel-body#onetime {padding: 15px;font-size: 3rem;color: #fff;font-weight: 100;letter-spacing: .15rem;background-color: #2ea0d6;}
+.panel-body#repeating-payments {padding: 15px;font-size: 3rem;color: #fff;font-weight: 100;letter-spacing: .15rem;background-color: #37c2b8;}
+.panel-body#my-statements {padding: 15px;font-size: 3rem;color: #fff;font-weight: 100;letter-spacing: .15rem;background-color: #66cae5;}
+
 /* =============================================================================
 =============================== Media Queries ==================================
 ================================================================================*/
