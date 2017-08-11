@@ -122,31 +122,39 @@ body.forgot-username {background-color: #282828;}
 .panel#repeating-payments .panel-body a {bottom: -4rem;}
 .panel#my-statements .panel-body a {bottom: -8rem;}
 
-/* =========================== My Giving Page ================================*/
+/* =========================== Calendar Page ================================*/
 
-.give #loading {display: none;margin-top: 2rem;}
+.calendar #loading {display: none;margin-top: 2rem;}
 
-.give #calendar {margin:8rem 0;}
+.calendar #calendar {margin:8rem 0;}
 
-.give .fc-unthemed td.fc-today {background: #dfdfdf;}
+.calendar .fc-unthemed td.fc-today {background: #dfdfdf;}
 
 /* kill the scrollbars and allow natural height */
-.give .fc-scroller,
-.give .fc-day-grid-container,    /* these divs might be assigned height, which we need to cleared */
-.give .fc-time-grid-container {overflow: visible !important;height: auto !important;}
+.calendar .fc-scroller,
+.calendar .fc-day-grid-container,    /* these divs might be assigned height, which we need to cleared */
+.calendar .fc-time-grid-container {overflow: visible !important;height: auto !important;}
 
-.give .fc-button.fc-state-default {box-shadow: none;border: 0;background: #fff;text-shadow: none;}
-.give .fc-button.fc-state-default.fc-state-active {box-shadow: none;border: 0;background: rgba(165, 165, 165, 0.2);text-shadow: none;color: #272727;}
-.give .fc-button.fc-state-default:hover {background: rgba(255, 255, 255, 0.5);}
+.calendar .fc-button.fc-state-default {box-shadow: none;border: 0;background: #fff;text-shadow: none;}
+.calendar .fc-button.fc-state-default.fc-state-active {box-shadow: none;border: 0;background: rgba(165, 165, 165, 0.2);text-shadow: none;color: #272727;}
+.calendar .fc-button.fc-state-default:hover {background: rgba(255, 255, 255, 0.5);}
 
-.give .fc-state-default.fc-corner-left {border-top-left-radius: 0;border-bottom-left-radius: 0;}
-.give .fc-state-default.fc-corner-left {border-top-left-radius: 0;border-bottom-left-radius: 0;}
-.give .fc-state-default.fc-corner-right {border-top-right-radius: 0;border-bottom-right-radius: 0;}
+.calendar .fc-state-default.fc-corner-left {border-top-left-radius: 0;border-bottom-left-radius: 0;}
+.calendar .fc-state-default.fc-corner-left {border-top-left-radius: 0;border-bottom-left-radius: 0;}
+.calendar .fc-state-default.fc-corner-right {border-top-right-radius: 0;border-bottom-right-radius: 0;}
 
-.give .fc-event, .fc-event-dot {background-color: #34b33f;}
-.give .fc-event {border-radius:0;border: 1px solid #34b33f;}
+.calendar .fc-event, .fc-event-dot {background-color: #34b33f;}
+.calendar .fc-event {border-radius:0;border: 1px solid #34b33f;}
 
-.give .fc-state-hover {color: #333333;text-decoration: none;background-position: 0 -15px;-webkit-transition: background-position 0.1s linear;-moz-transition: background-position 0.1s linear;-o-transition: background-position 0.1s linear;transition: background-position 0.1s linear;}
+.calendar .fc-state-hover {color: #333333;text-decoration: none;background-position: 0 -15px;-webkit-transition: background-position 0.1s linear;-moz-transition: background-position 0.1s linear;-o-transition: background-position 0.1s linear;transition: background-position 0.1s linear;}
+
+/* =========================== My Payment Methods Page ================================*/
+body.my-giving h1 {text-transform: uppercase;text-align: center;margin-bottom: 4rem;letter-spacing: .2rem;font-weight: 400;color: #505050;}
+
+body.my-giving .my-giving-table td a {color:#505050;}
+body.my-giving .my-giving-table td a:hover {color:#000000;transition: color ease .3s}
+
+body.my-giving .my-giving-table td span {display:none;}
 
 /* =============================================================================
 =============================== Media Queries ==================================
@@ -192,13 +200,30 @@ body.forgot-username {background-color: #282828;}
 
 @media (max-width: 767px) {
   img.logo.nav {max-width: 39px; }
+  body.my-giving .my-giving-table thead {display: none;}
+  body.my-giving .my-giving-table,
+  body.my-giving .my-giving-table tbody,
+  body.my-giving .my-giving-table td,
+  body.my-giving .my-giving-table tr {display:block;}
+  body.my-giving .my-giving-table td span {display:inline;}
+  body.my-giving .my-giving-table tr {float: left;width: 100%;margin-bottom: 3rem;background: #fff;}
+  body.my-giving .my-giving-table td.cell-payment-method {border-top: 0;margin-top: .1rem;}
+  body.my-giving .my-giving-table td.table-button {float: left;width: 50%;}
+  body.my-giving .my-giving-table td.table-button.edit {border-top: 0;margin: 1rem 0;}
+  body.my-giving .my-giving-table td.table-button.delete {border-top: 0;margin: 1rem 0;}
+  body.my-giving .my-giving-table td.table-button.edit a {background: #282828;padding: 1rem 3rem;margin: 2rem 0;color: #eee;}
+  body.my-giving .my-giving-table td.table-button.edit a:hover {background: #424242;text-decoration: none;}
+  body.my-giving .my-giving-table td.table-button.delete a {background: #282828;padding: 1rem 2rem;margin: 2rem 0;color: #eee;}
+  body.my-giving .my-giving-table td.table-button.delete a:hover {background: #424242;text-decoration: none;}
+
+
 }
 
 @media (max-width: 510px) {
   .fc-toolbar.fc-header-toolbar .fc-center h2 {margin-top:7rem;}
-  .give #calendar {margin: 2rem 0;}
+  .calendar #calendar {margin: 2rem 0;}
 }
 
 @media (max-width: 400px) {
-  .give .col-md-4 {padding-left:0;padding-right:0;}
+  .calendar .col-md-12 {padding-left:0;padding-right:0;}
 }
