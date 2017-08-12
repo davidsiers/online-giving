@@ -110,10 +110,11 @@ body.forgot-username {background-color: #282828;}
 /* ============================== Giving Page ================================*/
 
 .panel .side-image {padding:0;}
-.panel .side-image img {min-height: 25rem;}
+.panel .side-image img {min-height: 26rem;}
 .panel .panel-body {padding: 0px;}
 .panel .panel-body span {padding: 15px;}
 .panel .panel-body a {margin-right: 0;text-transform: none;bottom: -4rem;float: right;;border-bottom-left-radius: 25px;border-top-left-radius: 25px;padding: 1rem 5rem;color: #fff;background-color: rgba(255, 255, 255, 0.2);}
+.panel.panel-default .panel-body a:hover {padding: 1rem 6rem;background-color: rgba(255, 255, 255, 0.3); transition: all ease-in-out .3s}
 .panel .panel-body span, .panel .panel-body a {display: block}
 .panel#onetime {padding:0;font-size: 3rem;color: #fff;font-weight: 100;letter-spacing: .15rem;background-color: #2ea0d6;height: 26rem;overflow: hidden;}
 .panel#repeating-payments {padding: 0;font-size: 3rem;color: #fff;font-weight: 100;letter-spacing: .15rem;background-color: #37c2b8;height: 26rem;overflow: hidden;}
@@ -152,9 +153,31 @@ body.forgot-username {background-color: #282828;}
 body.my-giving h1 {text-transform: uppercase;text-align: center;margin-bottom: 4rem;letter-spacing: .2rem;font-weight: 400;color: #505050;}
 
 body.my-giving .my-giving-table td a {color:#505050;}
-body.my-giving .my-giving-table td a:hover {color:#000000;transition: color ease .3s}
+body.my-giving .my-giving-table td.edit a:hover {color:#257b04;transition: color ease .2s}
+body.my-giving .my-giving-table td.delete a:hover {color:#ca1818;transition: color ease .2s}
 
 body.my-giving .my-giving-table td span {display:none;}
+
+/* =========================== My Statements Page ===================================*/
+body.my-statements h1 {text-transform: uppercase;text-align: center;margin-bottom: 4rem;letter-spacing: .2rem;font-weight: 400;color: #505050;}
+
+body.my-statements .my-statements-table td a {color:#505050;}
+body.my-statements .my-statements-table td.edit a:hover {color:#257b04;transition: color ease .2s}
+body.my-statements .my-statements-table td.delete a:hover {color:#ca1818;transition: color ease .2s}
+
+body.my-statements .my-statements-table td span {display:none;}
+
+/* ============================= Online Giving Page ================================*/
+
+.online-giving h1 {text-transform: uppercase;text-align: center;margin-bottom: 4rem;letter-spacing: .2rem;font-weight: 400;color: #505050;}
+
+.online-giving #giving-amount h3 {text-align: center;text-transform: uppercase;font-weight: 400;letter-spacing:.2rem;}
+
+.online-giving #giving-amount .form-group.label-static label.control-label,
+.online-giving #giving-amount .form-group.label-floating.is-focused label.control-label,
+.online-giving #giving-amount .form-group.label-floating:not(.is-empty) label.control-label {top: -25px;left: 32px;font-size: 12px;line-height: 1.07142857;}
+
+.online-giving #giving-amount .total-payment {text-align: right;text-transform: uppercase;font-weight: 500;font-size: 1.8rem;margin-top: 1rem;}
 
 /* =============================================================================
 =============================== Media Queries ==================================
@@ -196,6 +219,8 @@ body.my-giving .my-giving-table td span {display:none;}
 @media (max-width: 1199px) {
   img.logo.nav {max-width: 40px;}
   .panel .panel-body a {padding: 1rem 3rem;}
+  .panel.panel-default .panel-body a:hover {padding: 1rem 4rem;background-color: rgba(255, 255, 255, 0.3);transition: all ease-in-out .3s;}
+
 }
 
 @media (max-width: 767px) {
@@ -216,12 +241,23 @@ body.my-giving .my-giving-table td span {display:none;}
   body.my-giving .my-giving-table td.table-button.delete a {background: #282828;padding: 1rem 2rem;margin: 2rem 0;color: #eee;}
   body.my-giving .my-giving-table td.table-button.delete a:hover {background: #424242;text-decoration: none;}
 
+  body.my-statements .my-statements-table thead {display: none;}
+  body.my-statements .my-statements-table,
+  body.my-statements .my-statements-table tbody,
+  body.my-statements .my-statements-table td,
+  body.my-statements .my-statements-table tr {display:block;}
+  body.my-statements .my-statements-table td span {display:inline;}
+  body.my-statements .my-statements-table tr {float: left;width: 100%;margin-bottom: 3rem;padding-bottom: 1rem;background: #fff;}
+  body.my-statements .my-statements-table td.cell-transaction-detail {border-top: 0;margin-top: .1rem;}
+  body.my-statements .my-statements-table td.cell-funds span {display: block;width: 20%;float: left;}
+  body.my-statements .my-statements-table td.cell-funds c {display: inline-block;width: 80%;float: left;}
 
 }
 
 @media (max-width: 510px) {
   .fc-toolbar.fc-header-toolbar .fc-center h2 {margin-top:7rem;}
   .calendar #calendar {margin: 2rem 0;}
+  .give .col-md-4 {padding-right:0;padding-left:0;}
 }
 
 @media (max-width: 400px) {

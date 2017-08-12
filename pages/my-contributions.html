@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Contributions | Online Giving</title>
+    <title>My Payment Methods | Online Giving</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -30,7 +30,7 @@
     <script src="../assets/js/jquery-1.10.2.min.js"></script>
   </head>
 
-  <body class="give">
+  <body class="my-statements">
     <div class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -53,7 +53,7 @@
                 <b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li><a href="my-giving.html">My Giving</a></li>
-                  <li class="active"><a href="my-contributions.html">My Contributions</a></li>
+                  <li class="active"><a href="my-contributions.html">My Statements</a></li>
                   <li><a href="my-payment-methods.html">My Payment Methods</a></li>
                   <li class="divider"></li>
                   <li><a href="login.html">Log Out</a></li>
@@ -65,17 +65,57 @@
     </div>
 
     <div class="container">
-      <div class="col-sm-4 col-sm-offset-4 forgot-username-form">
+      <div class="col-sm-12">
+        <h1>My Statements</h1>
 
-      <form class="form-forgot-username">
-        <h1>My Contributions</h1>
-        <div class="form-group label-floating is-empty">
-          <label class="control-label">Email</label>
-          <input type="email" class="form-control" required>
-          <span class="help-block"></span>
-        </div>
-        <button class="btn btn-default btn-lg btn-block login" type="submit">Submit</button>
-      </form>
+        <table class="table table-striped table-hover my-statements-table">
+          <thead>
+          <tr>
+            <th>Transaction Detail</th>
+            <th>Contribution Date</th>
+            <th>Type</th>
+            <th>Amount</th>
+            <th>Funds</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td class="cell-transaction-detail"><span><strong>Transaction Detail: </strong></span>1602506323</td>
+            <td><span><strong>Contribution Date: </strong></span>9/19/2017</td>
+            <td><span><strong>Type: </strong></span>Mastercard</td>
+            <td><span><strong>Amount: </strong></span>$15.00</td>
+            <td class="cell-funds"><span><strong>Funds: </strong></span><c>Building: $5.00<br>Gideon's Soldiers: $5.00<br>Missions: $20.00<br>Tithe: $85.00</c></td>
+          </tr>
+          <tr>
+            <td class="cell-transaction-detail"><span><strong>Transaction Detail: </strong></span>1573761977</td>
+            <td><span><strong>Contribution Date: </strong></span>8/16/2017</td>
+            <td><span><strong>Type: </strong></span>Mastercard</td>
+            <td><span><strong>Amount: </strong></span>$110.00</td>
+            <td class="cell-funds"><span><strong>Funds: </strong></span><c>Building: $1.00<br>Gideon's Soldiers: $10.00<br>Missions: $30.00<br>Tithe: $1.00</c></td>
+          </tr>
+          <tr>
+            <td class="cell-transaction-detail"><span><strong>Transaction Detail: </strong></span>1551705055</td>
+            <td><span><strong>Contribution Date: </strong></span>7/21/2017</td>
+            <td><span><strong>Type: </strong></span>Mastercard</td>
+            <td><span><strong>Amount: </strong></span>$115.00</td>
+            <td class="cell-funds"><span><strong>Funds: </strong></span><c>Building: $12.00<br>Gideon's Soldiers: $5.00<br>Missions: $20.00<br>Tithe: $90.00</c></td>
+          </tr>
+          <tr>
+            <td class="cell-transaction-detail"><span><strong>Transaction Detail: </strong></span>1503803112</td>
+            <td><span><strong>Contribution Date: </strong></span>6/30/2017</td>
+            <td><span><strong>Type: </strong></span>Mastercard</td>
+            <td><span><strong>Amount: </strong></span>$15.00</td>
+            <td class="cell-funds"><span><strong>Funds: </strong></span><c>Building: $8.00<br>Gideon's Soldiers: $35.00<br>Missions: $50.00<br>Tithe: $125.00</c></td>
+          </tr>
+          <tr>
+            <td class="cell-transaction-detail"><span><strong>Transaction Detail: </strong></span>1480439684</td>
+            <td><span><strong>Contribution Date: </strong></span>5/12/2017</td>
+            <td><span><strong>Type: </strong></span>Mastercard</td>
+            <td><span><strong>Amount: </strong></span>$100.00</td>
+            <td class="cell-funds"><span><strong>Funds: </strong></span><c>Building: $6.00<br>Gideon's Soldiers: $2.00<br>Missions: $90.00<br>Tithe: $115.00</c></td>
+          </tr>
+        </body>
+      </table>
 
 
     </div> <!-- /container -->
