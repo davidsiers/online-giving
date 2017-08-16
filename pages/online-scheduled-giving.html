@@ -23,14 +23,21 @@
     <!-- Dropdown.js -->
     <link href="../assets/css/jquery.dropdown.css" rel="stylesheet">
 
+    <!-- datepicker -->
+    <link href="../assets/css/calendar/bootstrap-material-datetimepicker.css" rel="stylesheet">
+
     <!-- Custom styles -->
     <link href="../assets/css/style.css" rel="stylesheet">
 
     <!-- jQuery -->
     <script src="../assets/js/jquery-1.10.2.min.js"></script>
+
+    <!-- Datepicker -->
+    <script src='../assets/js/calendar/moment.min.js'></script>
+    <script src='../assets/js/calendar/bootstrap-material-datetimepicker.js'></script>
   </head>
 
-  <body class="online-giving">
+  <body class="online-giving scheduled">
     <div class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -65,7 +72,7 @@
     </div>
 
     <div class="container">
-      <h1>Lancaster - Give Online</h1>
+      <h1>Lancaster - Scheduled Giving Online</h1>
       <div class="col-md-8 col-md-offset-2">
       <section id="personal-contact"> <!-- #personal-contact -->
       <div class="row">
@@ -248,6 +255,51 @@
       </div> <!-- .row -->
       </section> <!-- #giving-amount -->
 
+      <section id="scheduled-giving"> <!-- #scheduled-giving -->
+        <h3>Scheduled Giving</h3>
+        <div class="col-sm-12">
+          <div class="form-group label-floating is-empty">
+            <label class="control-label">Profile Name</label>
+            <input type="text" class="form-control" required>
+            <span class="help-block"></span>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div id="dropdown-menu">
+            <div class="form-group">
+              <label>Frequency</label>
+              <select class="form-control">
+                <option value="every-week">Every Week</option>
+                <option value="every-two-weeks">Every Two Weeks</option>
+                <option value="every-four-weeks">Every Four Weeks</option>
+                <option value="every-month">Once a Month</option>
+                <option value="twice-a-month">Twice a Month</option>
+                <option value="every-three-months">Every Three Months</option>
+                <option value="every-six-months">Every Six Months</option>
+                <option value="every-year">Every Year</option>
+                <option value="one-time">One Time Gift</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 add-margin-top-2rem">
+          <div class="form-control-wrapper">
+          <input type="text" id="date" class="form-control floating-label" placeholder="Starting Date">
+          </div>
+        </div>
+        <div class="col-sm-6 toggle">
+          <div class="togglebutton">
+             <label>Pay until Further Notice <input type="checkbox"></label>
+           </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group label-floating">
+            <label class="control-label">Number of Payments</label>
+            <input type="number" class="form-control">
+          </div>
+        </div>
+    </section> <!-- #scheduled-giving -->
+
       <section id="submit">
         <div class="row">
           <div class="col-sm-4 col-sm-offset-8">
@@ -266,6 +318,11 @@
     <script src="../assets/js/material.js"></script>
     <script src="../assets/js/ripples.min.js"></script>
     <script>
+      $('#date').bootstrapMaterialDatePicker
+      ({
+        time: false,
+        clearButton: true
+      });
       $.material.init();
     </script>
 

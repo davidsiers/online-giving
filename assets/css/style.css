@@ -169,15 +169,69 @@ body.my-statements .my-statements-table td span {display:none;}
 
 /* ============================= Online Giving Page ================================*/
 
+.online-giving .container {margin-bottom:6rem;}
+
 .online-giving h1 {text-transform: uppercase;text-align: center;margin-bottom: 4rem;letter-spacing: .2rem;font-weight: 400;color: #505050;}
 
+.online-giving #personal-contact {margin-bottom: 5rem;}
+.online-giving #address {margin-bottom: 5rem;}
+.online-giving #payment-method {margin-bottom: 5rem;}
+.online-giving #submit {margin-top: 4rem;}
+
 .online-giving #giving-amount h3 {text-align: center;text-transform: uppercase;font-weight: 400;letter-spacing:.2rem;}
+
+.online-giving #giving-amount .form-group.is-focused .form-control {
+    outline: none;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#3a8e40), to(#3a8e40)), -webkit-gradient(linear, left top, left bottom, from(#424242), to(#424242));
+    background-image: -webkit-linear-gradient(#3a8e40, #3a8e40), -webkit-linear-gradient(#424242, #424242);
+    background-image: -o-linear-gradient(#3a8e40, #3a8e40), -o-linear-gradient(#424242, #424242);
+    background-image: linear-gradient(#3a8e40, #3a8e40), linear-gradient(#424242, #424242);
+    -webkit-transition-duration: 0.5s;
+         -o-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+}
 
 .online-giving #giving-amount .form-group.label-static label.control-label,
 .online-giving #giving-amount .form-group.label-floating.is-focused label.control-label,
 .online-giving #giving-amount .form-group.label-floating:not(.is-empty) label.control-label {top: -25px;left: 32px;font-size: 12px;line-height: 1.07142857;}
 
-.online-giving #giving-amount .total-payment {text-align: right;text-transform: uppercase;font-weight: 500;font-size: 1.8rem;margin-top: 1rem;}
+.online-giving #giving-amount .form-group.label-floating,
+.online-giving #giving-amount .form-group.label-floating.is-empty.is-focused {margin-bottom: 2rem; transition: margin-bottom ease-in-out .2s;}
+.online-giving #giving-amount .form-group.label-floating.is-empty {margin-bottom: 0;}
+
+.online-giving #giving-amount .form-group.label-floating input {text-align: right;}
+.online-giving #giving-amount .help-block {text-align: right;width: 100%;padding-right: 3rem;}
+
+.online-giving #giving-amount .total-payment {text-align: right;text-transform: uppercase;font-weight: 500;font-size: 1.8rem;margin: 1rem 0;}
+
+.online-giving #submit div div {padding-right: 0;padding-left: 0;}
+
+.btn:not(.btn-raised).btn-submit {color: #d8d8d8;letter-spacing: 1px;background-color: rgba(40, 40, 40, 1);border-radius: 0;font-weight:100;}
+.btn:not(.btn-raised).btn-submit:hover {background-color: rgba(40, 40, 40, .8);}
+
+
+/* ======================== Online Scheduled Giving Page ===========================*/
+
+.online-giving.scheduled #scheduled-giving h3 {text-align: center;text-transform: uppercase;font-weight: 400;letter-spacing:.2rem;}
+.online-giving.scheduled #scheduled-giving .add-margin-top-2rem {margin-top:2.8rem;}
+
+.togglebutton label input[type=checkbox] {margin-left: 1rem;}
+.togglebutton label input[type=checkbox]:checked + .toggle {background-color:#717171;}
+.togglebutton label input[type=checkbox]:checked + .toggle:after {background-color: #4e4e4e;}
+.togglebutton label input[type=checkbox]:checked + .toggle:active:after {
+  -webkit-box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(88, 88, 88, 0.1);
+          box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(88, 88, 88, 0.1);
+        }
+
+.online-giving.scheduled div.toggle {margin-top:2rem}
+.dtp div.dtp-date, .dtp div.dtp-time {background: #7d7d7d;}
+.dtp .p10 > a {color: #5d5d5d;}
+.dtp div.dtp-actual-year {color: #ffffff;}
+.dtp table.dtp-picker-days tr > td > a.selected {background: #7d7d7d;}
+.dtp > .dtp-content > .dtp-date-view > header.dtp-header {background: #5d5d5d;}
+.btn:not(.btn-raised), .input-group-btn .btn:not(.btn-raised), .btn:not(.btn-raised).btn-default, .input-group-btn .btn:not(.btn-raised).btn-default {color: #8a8a8a;background-color: rgba(183, 183, 183, 0.14);}
+
+.online-giving.scheduled #submit div div {margin-top: 5rem;}
 
 /* =============================================================================
 =============================== Media Queries ==================================
@@ -251,6 +305,9 @@ body.my-statements .my-statements-table td span {display:none;}
   body.my-statements .my-statements-table td.cell-transaction-detail {border-top: 0;margin-top: .1rem;}
   body.my-statements .my-statements-table td.cell-funds span {display: block;width: 20%;float: left;}
   body.my-statements .my-statements-table td.cell-funds c {display: inline-block;width: 80%;float: left;}
+
+  body.online-giving #giving-amount div.panel {padding: 1rem 2rem 1rem 0;}
+  body.online-giving #giving-amount h3 {margin-bottom: 2rem;}
 
 }
 
