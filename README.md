@@ -21,18 +21,18 @@ online-giving/
 │    │-- fonts/
 |
 |-- pages/
-|    |-- account-registration.html                  
-|    |-- calendar.html
-|    |-- dashboard.html
-|    |-- forgot-password.html
-|    |-- forgot-username.html
-|    |-- give.html
-|    |-- login.html
-|    |-- my-contributions.html
-|    |-- my-giving.html
-|    |-- my-payment-methods.html
-|    |-- online-giving.html
-|    |-- online-scheduled-giving.html
+|    ├── account-registration.html                  
+|    ├── calendar.html
+|    ├── dashboard.html
+|    ├── forgot-password.html
+|    ├── forgot-username.html
+|    ├── give.html
+|    ├── login.html
+|    ├── my-contributions.html
+|    ├── my-giving.html
+|    ├── my-payment-methods.html
+|    ├── online-giving.html
+|    ├── online-scheduled-giving.html
 |
 ├── .gitattributes
 ├── README.md                          
