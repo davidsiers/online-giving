@@ -244,6 +244,15 @@ body.my-statements .my-statements-table td span {display:none;}
 
 .online-giving.scheduled #submit div div {margin-top: 5rem;}
 
+
+/* ======================== Online Scheduled Giving Page ===========================*/
+
+.my-repeating-payments h1 {text-align: center; margin-bottom: 5rem;}
+
+.my-repeating-payments .panel-body {padding: 2rem;}
+
+.my-repeating-payments .btn:not(.btn-raised), .input-group-btn .btn:not(.btn-raised), .btn:not(.btn-raised).btn-default, .input-group-btn .btn:not(.btn-raised).btn-default {font-weight: 400;}
+
 /* =============================================================================
 =============================== Media Queries ==================================
 ================================================================================*/
