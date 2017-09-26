@@ -121,12 +121,12 @@ body.forgot-username {background-color: #282828;}
 .panel .panel-body a {margin-right: 0;text-transform: none;bottom: -4rem;float: right;;border-bottom-left-radius: 25px;border-top-left-radius: 25px;padding: 1rem 5rem;color: #fff;background-color: rgba(255, 255, 255, 0.2);}
 .panel.panel-default .panel-body a:hover {padding: 1rem 6rem;background-color: rgba(255, 255, 255, 0.3); transition: all ease-in-out .3s}
 .panel .panel-body span, .panel .panel-body a {display: block}
-.panel#onetime {padding:0;font-size: 3rem;color: #fff;font-weight: 100;letter-spacing: .15rem;background-color: #236d56;height: 26rem;overflow: hidden;}
-.panel#repeating-payments {padding: 0;font-size: 3rem;color: #fff;font-weight: 100;letter-spacing: .15rem;background-color: #00a983;height: 26rem;overflow: hidden;}
-.panel#my-statements {padding: 0;font-size: 3rem;color: #fff;font-weight: 100;letter-spacing: .15rem;background-color: #2ea0d6;height: 26rem;overflow: hidden;}
-.panel#giving-profile {padding:0;font-size: 3rem;color: #fff;font-weight: 100;letter-spacing: .15rem;background-color: #66cae5;height: 26rem;overflow: hidden;}
-.panel#payment-methods {padding:0;font-size: 3rem;color: #fff;font-weight: 100;letter-spacing: .15rem;background-color: #37c2b8;height: 26rem;overflow: hidden;}
-.panel#church-calendar {padding:0;font-size: 3rem;color: #fff;font-weight: 100;letter-spacing: .15rem;background-color: #004E64;height: 26rem;overflow: hidden;}
+.panel#onetime {padding:0;font-size: 3rem;color: #fff;font-weight: 100;letter-spacing: .15rem;background-color: #66cae5;height: 26rem;overflow: hidden;}
+.panel#repeating-payments {padding: 0;font-size: 3rem;color: #fff;font-weight: 100;letter-spacing: .15rem;background-color: #2ea0d6;height: 26rem;overflow: hidden;}
+.panel#my-statements {padding: 0;font-size: 3rem;color: #fff;font-weight: 100;letter-spacing: .15rem;background-color: #004e64;height: 26rem;overflow: hidden;}
+.panel#giving-profile {padding:0;font-size: 3rem;color: #fff;font-weight: 100;letter-spacing: .15rem;background-color: #2ea0d6;height: 26rem;overflow: hidden;}
+.panel#payment-methods {padding:0;font-size: 3rem;color: #fff;font-weight: 100;letter-spacing: .15rem;background-color: #004e64;height: 26rem;overflow: hidden;}
+.panel#church-calendar {padding:0;font-size: 3rem;color: #fff;font-weight: 100;letter-spacing: .15rem;background-color: #66cae5;height: 26rem;overflow: hidden;}
 .panel#onetime .panel-body a {bottom: -8.4rem;}
 .panel#repeating-payments .panel-body a {bottom: -4rem;}
 .panel#my-statements .panel-body a,
