@@ -7,6 +7,10 @@ img.logo.login {max-width: 100px;margin-bottom: 4rem;}
 
 .form-group {margin: 5px 0 0 0;}
 
+body.login .form-control {color: #d8d8d8;}
+
+.form-group.label-floating:not(.is-empty) label.control-label {color: #676767;}
+
 .form-control,
 .form-group .form-control {
   border: 0;
@@ -60,7 +64,8 @@ span.forgot-password a {color: #5e5e5e;font-weight: 500;font-size: 1.1rem;letter
 
 div.bottom {bottom: 0;position: fixed;right: 0;left: 0;z-index: 1030;margin: 2rem 0;}
 span.create-account {text-align: center;display: block;}
-span.create-account a {color: #5e5e5e;font-weight: 500;font-size: 1.1rem;letter-spacing: .1rem;}
+span.create-account a {color: #808080;font-weight: 300;font-size: 1.1rem;letter-spacing: .1rem;background: #3c3c3c;padding: 1rem 5rem;transition: all .3s;}
+span.create-account a:hover {text-decoration: none;background: #4c4c4c;}
 
 /* ===================== Account Registration Page ===========================*/
 
@@ -116,12 +121,18 @@ body.forgot-username {background-color: #282828;}
 .panel .panel-body a {margin-right: 0;text-transform: none;bottom: -4rem;float: right;;border-bottom-left-radius: 25px;border-top-left-radius: 25px;padding: 1rem 5rem;color: #fff;background-color: rgba(255, 255, 255, 0.2);}
 .panel.panel-default .panel-body a:hover {padding: 1rem 6rem;background-color: rgba(255, 255, 255, 0.3); transition: all ease-in-out .3s}
 .panel .panel-body span, .panel .panel-body a {display: block}
-.panel#onetime {padding:0;font-size: 3rem;color: #fff;font-weight: 100;letter-spacing: .15rem;background-color: #2ea0d6;height: 26rem;overflow: hidden;}
-.panel#repeating-payments {padding: 0;font-size: 3rem;color: #fff;font-weight: 100;letter-spacing: .15rem;background-color: #37c2b8;height: 26rem;overflow: hidden;}
-.panel#my-statements {padding: 0;font-size: 3rem;color: #fff;font-weight: 100;letter-spacing: .15rem;background-color: #66cae5;height: 26rem;overflow: hidden;}
+.panel#onetime {padding:0;font-size: 3rem;color: #fff;font-weight: 100;letter-spacing: .15rem;background-color: #236d56;height: 26rem;overflow: hidden;}
+.panel#repeating-payments {padding: 0;font-size: 3rem;color: #fff;font-weight: 100;letter-spacing: .15rem;background-color: #00a983;height: 26rem;overflow: hidden;}
+.panel#my-statements {padding: 0;font-size: 3rem;color: #fff;font-weight: 100;letter-spacing: .15rem;background-color: #2ea0d6;height: 26rem;overflow: hidden;}
+.panel#giving-profile {padding:0;font-size: 3rem;color: #fff;font-weight: 100;letter-spacing: .15rem;background-color: #66cae5;height: 26rem;overflow: hidden;}
+.panel#payment-methods {padding:0;font-size: 3rem;color: #fff;font-weight: 100;letter-spacing: .15rem;background-color: #37c2b8;height: 26rem;overflow: hidden;}
+.panel#church-calendar {padding:0;font-size: 3rem;color: #fff;font-weight: 100;letter-spacing: .15rem;background-color: #004E64;height: 26rem;overflow: hidden;}
 .panel#onetime .panel-body a {bottom: -8.4rem;}
 .panel#repeating-payments .panel-body a {bottom: -4rem;}
-.panel#my-statements .panel-body a {bottom: -8rem;}
+.panel#my-statements .panel-body a,
+.panel#giving-profile .panel-body a,
+.panel#payment-methods .panel-body a,
+.panel#church-calendar .panel-body a {bottom: -8rem;}
 
 /* =========================== Calendar Page ================================*/
 
@@ -229,7 +240,7 @@ body.my-statements .my-statements-table td span {display:none;}
 .dtp div.dtp-actual-year {color: #ffffff;}
 .dtp table.dtp-picker-days tr > td > a.selected {background: #7d7d7d;}
 .dtp > .dtp-content > .dtp-date-view > header.dtp-header {background: #5d5d5d;}
-.btn:not(.btn-raised), .input-group-btn .btn:not(.btn-raised), .btn:not(.btn-raised).btn-default, .input-group-btn .btn:not(.btn-raised).btn-default {color: #8a8a8a;background-color: rgba(183, 183, 183, 0.14);}
+.btn:not(.btn-raised), .input-group-btn .btn:not(.btn-raised), .btn:not(.btn-raised).btn-default, .input-group-btn .btn:not(.btn-raised).btn-default {color: #bdbdbd;background-color: rgba(183, 183, 183, 0.14);}
 
 .online-giving.scheduled #submit div div {margin-top: 5rem;}
 
