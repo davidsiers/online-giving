@@ -254,6 +254,8 @@ body.my-statements .my-statements-table td span {display:none;}
 
 .my-repeating-payments .btn:not(.btn-raised), .input-group-btn .btn:not(.btn-raised), .btn:not(.btn-raised).btn-default, .input-group-btn .btn:not(.btn-raised).btn-default {font-weight: 400;}
 
+.my-repeating-payments .btn:not(btn-raised).btn-primary {color: #fff;}
+
 /* =============================================================================
 =============================== Media Queries ==================================
 ================================================================================*/
