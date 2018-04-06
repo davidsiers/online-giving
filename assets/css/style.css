@@ -242,7 +242,7 @@ body.my-statements .my-statements-table td span {display:none;}
 .dtp table.dtp-picker-days tr > td > a.selected {background: #7d7d7d;}
 .dtp > .dtp-content > .dtp-date-view > header.dtp-header {background: #5d5d5d;}
 .btn:not(.btn-raised), .input-group-btn .btn:not(.btn-raised), .btn:not(.btn-raised).btn-default, .input-group-btn .btn:not(.btn-raised).btn-default {color: #bdbdbd;background-color: rgba(183, 183, 183, 0.24);}
-
+.btn:not(.btn-raised), .input-group-btn:hover .btn:not(.btn-raised), .btn:not(.btn-raised).btn-default:hover, .input-group-btn .btn:not(.btn-raised).btn-default:hover {text-decoration: none;background: #4c4c4c;}
 .online-giving.scheduled #submit div div {margin-top: 5rem;}
 
 
